@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let soPhanTu=parseInt(prompt("nhập số lượng phần tử: "))
+    let mang=[];
+    for (let i=0;i<soPhanTu;i++){
+        mang[i]=Math.floor(Math.random() *100);
+        document.write(mang[i]+"<br>")
+    }
+    document.write("--------------------------------------------------"+"<br>");
+    mang.sort(function(a, b){return b - a})
+    document.write(mang)
+
+</script>

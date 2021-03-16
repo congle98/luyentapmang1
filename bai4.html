@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="ip">
+<input type="button" value="Nhập" onclick="nhap()">
+<input type="button" value="Xuất" onclick="xuat()">
+<input type="button" value="Đảo" onclick="dao()">
+</body>
+</html>
+<script>
+    let mang=[];
+function nhap() {
+    mang.push(document.getElementById("ip").value);
+    document.getElementById("ip").value=" ";
+}
+function xuat(){
+    document.getElementById("ip").value=mang;
+}
+function dao() {
+    mang=mang.reverse();
+}
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let soPhanTua=parseInt(prompt("nhập số lượng phần tử mảng a: "))
+    let soPhanTub=parseInt(prompt("nhập số lượng phần tử mảng b: "))
+    let manga=[];
+    for (let i=0;i<soPhanTua;i++){
+        manga[i]=Math.floor(Math.random() *100);
+
+    }
+    document.write(manga+"<br>")
+    document.write("--------------------------------------------------"+"<br>");
+    let mangb=[];
+    for (let i=0;i<soPhanTub;i++){
+        mangb[i]=Math.floor(Math.random() *100);
+
+    }
+    document.write(mangb+"<br>")
+    document.write("----------------------------------------------------"+"<br>")
+    let mangc=manga.concat(mangb);
+    document.write(mangc)
+
+</script>

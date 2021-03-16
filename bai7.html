@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //Math.floor(Math.random() * (max - min)) + min;
+    let soPhanTu=parseInt(prompt("nhập số lượng phần tử: "))
+    let mang=[];
+    let nhapSo=parseInt(prompt("nhập số cần tìm: "))
+    for (let i=0;i<soPhanTu;i++){
+        mang[i]=Math.floor((Math.random() * 4)+3);
+        console.log(mang[i])
+        document.write(mang[i]+"<br>")
+    }
+    document.write("--------------------------------------------------"+"<br>");
+    let ketqua=0;
+    for (let i=0;i<soPhanTu;i++){
+        if (nhapSo==mang[i]){
+            ketqua++;
+            mang.push(0);
+            mang.splice(i,1);
+
+        }
+    }
+    for (let i=0;i<soPhanTu;i++){
+        if (nhapSo==mang[i]){
+            ketqua++;
+            mang.push(0);
+            mang.splice(i,1);
+
+        }
+    }
+    document.write(mang+"<br>");
+    if (ketqua==0){
+        document.write("V is not in the array")
+    }
+    else {
+        document.write("V is in the array")
+    }
+
+</script>
